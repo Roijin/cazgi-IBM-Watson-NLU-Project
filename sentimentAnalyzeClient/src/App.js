@@ -50,7 +50,7 @@ class App extends React.Component {
         } else if (data === "negative"){
           output = <div style={{color:"red",fontSize:20}}>{data}</div>
         } else {
-          output = <div style={{color:"orange",fontSize:20}}>{data}</div>
+          output = <div style={{color:"yellow",fontSize:20}}>{data}</div>
         }
         this.setState({sentimentOutput:output});
       })});
@@ -71,8 +71,8 @@ class App extends React.Component {
   })})  ;
   }
   
-
   render() {
+    document.title = "Sentiment Analyzer";
     return (  
       <div className="App">
       <button className="btn btn-info" onClick={this.renderTextArea}>Text</button>
@@ -88,5 +88,4 @@ class App extends React.Component {
     );
     }
 }
-
 export default App;
