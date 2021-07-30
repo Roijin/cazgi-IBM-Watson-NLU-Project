@@ -1,7 +1,7 @@
 ---
 applications:
 - path: .
-  name: alexis-0da-sentiment-analyzer #change to be unique in IBM Cloud
+  name: raihan-879-sentiment-analyzer #change to be unique in IBM Cloud
   buildpack: sdk-for-nodejs
   memory: 256M
   instances: 1
